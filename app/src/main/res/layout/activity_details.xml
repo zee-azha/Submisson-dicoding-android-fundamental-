@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextContent.Small.Bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_avatar"
+        android:gravity="center"
+        tools:text="@string/name"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        style="@style/TextContent.Small"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        tools:text="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/TextContent.Small"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        tools:text="@string/company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/TextContent.Small"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        tools:text="@string/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_company" />
+
+    <TextView
+        android:id="@+id/tv_followers"
+        style="@style/TextContent.data"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/followers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <TextView
+        android:id="@+id/tv_following"
+        style="@style/TextContent.data"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/following"
+        app:layout_constraintStart_toEndOf="@+id/tv_followers"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <TextView
+        android:id="@+id/tv_repository"
+        style="@style/TextContent.data"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/repository"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_following"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+    <TextView
+        android:id="@+id/followers"
+        style="@style/TextContent.Subtitle"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dummy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_followers" />
+
+    <TextView
+        android:id="@+id/following"
+        style="@style/TextContent.Subtitle"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dummy"
+        app:layout_constraintStart_toEndOf="@+id/tv_followers"
+        app:layout_constraintTop_toBottomOf="@+id/tv_following" />
+
+    <TextView
+        android:id="@+id/repository"
+        style="@style/TextContent.Subtitle"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dummy"
+        app:layout_constraintStart_toEndOf="@+id/tv_following"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repository" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
